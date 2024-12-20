@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="logo" onclick="reload()">V-News</a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-links nav-item" id="sports" onclick="navClick('sports')">SPORTS</li>
+                    <li class="hover-links nav-item" id="stock market" onclick="navClick('stock market')">STOCK MARKET</li>
+                    <li class="hover-links nav-item" id="politics" onclick="navClick('politics')">POLITICS</li>
+                </ul>
+            </div>
+            <div class="nav-search flex">
+                <input type="text" id="search" class="search" placeholder="Search Here">
+                <button class="Search-button" id="Search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+            
+        </div>
+    </main>
+    <template id="card-template">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="news-title" id="news-title" >this is title </h3>
+                <h6 class="news-source" id="news-source">end gadget 19/12/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi ipsam voluptatibus quisquam placeat at est neque maiores cumque illo!</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
